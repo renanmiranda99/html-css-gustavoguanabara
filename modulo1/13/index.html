@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou aumente e diminua o tamanho do navegador</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequeno.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio </h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/First Call - Kevin MacLeod.mp3" type="audio/mpeg">
+        <source src="midia/First Call - Kevin MacLeod.ogg" type="audio/ogg">
+        <source src="midia/First Call - Kevin MacLeod.wav" type="audio/wav">
+        <p>Infelizmente seu navegador nao consegue reproduzir audio. <a href="13/midia/First Call - Kevin MacLeod.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+
+    </audio>
+
+
+
+</body>
+</html>
